@@ -6,6 +6,12 @@
 package profeet;
 
 import java.awt.GridBagLayout;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.sql.ResultSet;
 
 /**
  *
@@ -13,6 +19,10 @@ import java.awt.GridBagLayout;
  */
 public class Main extends javax.swing.JFrame {
     GridBagLayout layout = new GridBagLayout();
+    
+    Connection con;
+    Statement stmt;
+    ResultSet rs;
 
     /**
      * Creates new form Main
@@ -22,6 +32,8 @@ public class Main extends javax.swing.JFrame {
         jPanel1.setVisible(true);
         jPanel2.setVisible(false);
         jPanel3.setVisible(false);
+        
+        //DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
     }
 
     /**
@@ -532,7 +544,14 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_tfPodologojTextField7ActionPerformed
 
     private void jButton15jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15jButton1ActionPerformed
-        // TODO add your handling code here:
+        String sNombre = tfNombre.getText();
+        String sApellido = tfApellido.getText();
+        String sEmail = tfEmail.getText();
+        String sTelefono = tfTelefono.getText();
+        String sHora = tfHora.getText();
+        String sFecha = tfFecha.getText();
+        String sPodologo = tfPodologo.getText();
+        DoConnect(sNombre, sApellido, sEmail, sTelefono, sHora, sFecha, sPodologo);
     }//GEN-LAST:event_jButton15jButton1ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
@@ -625,4 +644,23 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField tfPodologo;
     private javax.swing.JTextField tfTelefono;
     // End of variables declaration//GEN-END:variables
+
+    private void DoConnect(String sNombre, String sApellido, String sEmail, String sTelefono, String sHora, String sFecha, String sPodologo) {
+        try {
+            //Conectar a la base de datos
+            String host = "jdbc:derby://localhost:1527/profeet";
+            String uName = "test";
+            String uPass = "1234";
+            con = DriverManager.getConnection(host, uName, uPass);
+
+            //Ejecuta el SQL y guarda el resultado en ResultSet
+            stmt = con.createStatement();
+            String SQL = "INSERT INTO TEST.CITAS VALUES('" + sNombre + "','" + sApellido + "','" + sEmail + "','" + sTelefono + "','" + sHora + "','" + sFecha + "','" + sPodologo + "')";
+            rs = stmt.executeQuery(SQL);
+            
+        }
+        catch (SQLException err) {
+            JOptionPane.showMessageDialog(this, err.getMessage());
+        }
+    }
 }
