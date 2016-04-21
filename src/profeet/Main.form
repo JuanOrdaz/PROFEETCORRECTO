@@ -245,11 +245,11 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jTextField1" alignment="0" pref="232" max="32767" attributes="0"/>
-                                      <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="tfBusNombre" alignment="0" pref="232" max="32767" attributes="0"/>
+                                      <Component id="tfBusApellido" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jTextField3" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="tfBusFecha" min="-2" pref="130" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jButton1" min="-2" pref="116" max="-2" attributes="0"/>
                                   </Group>
@@ -270,7 +270,7 @@
                               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfBusNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -290,14 +290,14 @@
                               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfBusApellido" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfBusFecha" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -339,7 +339,7 @@
                 <Property name="text" type="java.lang.String" value="Nombre:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="tfBusNombre">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
@@ -349,7 +349,7 @@
                 <Property name="text" type="java.lang.String" value="Apeidos:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
+            <Component class="javax.swing.JTextField" name="tfBusApellido">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
@@ -359,7 +359,7 @@
                 <Property name="text" type="java.lang.String" value="Fecha:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField3">
+            <Component class="javax.swing.JTextField" name="tfBusFecha">
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">
               <AuxValues>
@@ -457,7 +457,7 @@
                                               <Component id="jButton15" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
-                                          <Component id="jTextField63" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="tfPodologo" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -465,36 +465,32 @@
                                           <Group type="102" alignment="1" attributes="0">
                                               <Component id="jLabel80" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jTextField64" max="32767" attributes="0"/>
+                                              <Component id="tfFecha" max="32767" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel74" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jTextField59" min="-2" pref="228" max="-2" attributes="0"/>
+                                              <Component id="tfEmail" min="-2" pref="228" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel73" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jTextField58" min="-2" pref="228" max="-2" attributes="0"/>
+                                              <Component id="tfApellido" min="-2" pref="228" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel72" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jTextField57" min="-2" pref="228" max="-2" attributes="0"/>
+                                              <Component id="tfNombre" min="-2" pref="228" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel75" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                              <Component id="jTextField60" min="-2" pref="228" max="-2" attributes="0"/>
+                                              <Component id="tfTelefono" min="-2" pref="228" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel76" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jTextField61" min="-2" pref="103" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jLabel77" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jTextField62" max="32767" attributes="0"/>
+                                              <Component id="tfHora" min="-2" pref="103" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
@@ -516,19 +512,17 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel76" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField61" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel77" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField62" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfHora" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel80" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField64" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfFecha" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel78" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField63" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfPodologo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton15" min="-2" max="-2" attributes="0"/>
@@ -541,23 +535,23 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField57" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfNombre" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel72" alignment="1" min="-2" pref="26" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel73" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField58" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfApellido" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel74" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField59" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfEmail" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel75" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField60" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfTelefono" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jLabel71" alignment="0" min="-2" pref="208" max="-2" attributes="0"/>
@@ -586,9 +580,9 @@
                 <Property name="text" type="java.lang.String" value="Nombre(s): "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField57">
+            <Component class="javax.swing.JTextField" name="tfNombre">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField57jTextField1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfNombrejTextField1ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel73">
@@ -599,7 +593,10 @@
                 <Property name="text" type="java.lang.String" value="Apeidos:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField58">
+            <Component class="javax.swing.JTextField" name="tfApellido">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfApellidoActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel74">
               <Properties>
@@ -609,9 +606,9 @@
                 <Property name="text" type="java.lang.String" value="E-Mail:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField59">
+            <Component class="javax.swing.JTextField" name="tfEmail">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField59jTextField3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfEmailjTextField3ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel75">
@@ -622,7 +619,7 @@
                 <Property name="text" type="java.lang.String" value="Tel&#xe9;fono:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField60">
+            <Component class="javax.swing.JTextField" name="tfTelefono">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel76">
               <Properties>
@@ -632,17 +629,7 @@
                 <Property name="text" type="java.lang.String" value="Hora:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField61">
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel77">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Black" size="13" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Minutos:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField62">
+            <Component class="javax.swing.JTextField" name="tfHora">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel78">
               <Properties>
@@ -652,9 +639,9 @@
                 <Property name="text" type="java.lang.String" value="Pod&#xf3;logo:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField63">
+            <Component class="javax.swing.JTextField" name="tfPodologo">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField63jTextField7ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfPodologojTextField7ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButton15">
@@ -687,7 +674,7 @@
                 <Property name="text" type="java.lang.String" value="Fecha:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField64">
+            <Component class="javax.swing.JTextField" name="tfFecha">
             </Component>
             <Component class="javax.swing.JButton" name="jButton16">
               <Properties>
